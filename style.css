@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    height: 100%;
+    overflow: hidden;
+}
+
+.game-text{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    color: #fff;
+    font-size: 50px;
+}
+
+.btn{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start > button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+}
+
+.game-text > button{
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: salmon;
+    border: none;
+    cursor: pointer;
+}
+
+.left{
+    position: relative;
+    width: 50px; /* 버튼의 폭 */
+    height: 50px; /* 버튼의 높이 */
+    top: 725px; /* 중앙에서 조금 아래로 이동 */
+    left : 17.5px;
+    transform: translate(-50%, -50%);
+}
+
+.right{
+    position: relative;
+    width: 50px; /* 버튼의 폭 */
+    height: 50px; /* 버튼의 높이 */
+    top: 725px; /* 중앙에서 조금 아래로 이동 */
+    left : 32.5px;
+    transform: translate(-50%, -50%);
+}
+
+.up{
+    position: relative;
+    width: 50px; /* 버튼의 폭 */
+    height: 50px; /* 버튼의 높이 */
+    top: 692.5px; /* 중앙에서 조금 아래로 이동 */
+    left : 75px;
+    transform: translate(-50%, -50%);
+}
+
+.down{
+    position: relative;
+    width: 50px; /* 버튼의 폭 */
+    height: 50px; /* 버튼의 높이 */
+    top: 757.5px; /* 중앙에서 조금 아래로 이동 */
+    left : 25px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.score{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 2rem;
+}
+
+.playground > ul{
+    border: 1px soild #333;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.playground > ul > li{
+    width: 100%;
+    height : 25px;
+}
+
+.playground > ul > li > ul{
+    display: flex;
+}
+
+.playground > ul > li > ul > li {
+    width: 25px;
+    height: 25px;
+    outline: 1px solid #ccc;
+}
+
+.tree{
+    background-color: #67c23a;
+}
+
+.bar{
+    background-color: #2a38b1;
+}
+.zee{
+    background-color: #1fcbe2;
+}
+
+.square{
+    background-color: #c57f15;
+}
+.elLeft{
+    background-color: #c70f99;
+}
+
+.elRight{
+    background-color: #e7e414;
+}
