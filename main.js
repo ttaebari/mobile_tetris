@@ -7,10 +7,7 @@ const startText = document.querySelector(".start")
 const scoreDisplay = document.querySelector(".score");
 const startButton = document.querySelector(".start > button")
 const restartButton = document.querySelector(".game-text > button")
-const left_button = document.querySelector(".btn.left")
-const right_button = document.querySelector(".btn.right")
-const up_button = document.querySelector(".btn.up")
-const down_button = document.querySelector(".btn.down")
+const btn = document.querySelector(".btn")
 
 // Setting
 const GAME_ROWS = 20;
@@ -88,6 +85,7 @@ function renderBlocks(moveType = ""){
 }
 
 function showGameoverText(){
+    btn.style.display = "none"
     gameText.style.display = "flex"
 }
 
@@ -187,6 +185,7 @@ document.addEventListener("keydown", e => {
 restartButton.addEventListener("click",()=>{
     playground.innerHTML = "";
     gameText.style.display = "none"
+    btn.style.display = "flex"
     init();
 })
 
@@ -194,6 +193,7 @@ startButton.addEventListener("click",()=>{
     playground.innerHTML = "";
     init();
     startText.style.display = "none"
+    btn.style.display = "flex"
 })
 
 document.getElementById('right').addEventListener("click",()=>{
