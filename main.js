@@ -209,5 +209,5 @@ document.getElementById('up').addEventListener("click",()=>{
 })
 
 document.getElementById('down').addEventListener("click",()=>{
-    moveBlock("top", 2)
+    moveBlock("top", 1)
 })
